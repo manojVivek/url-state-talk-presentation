@@ -45,9 +45,9 @@ export default function BasicUrlState() {
                                 +
                             </button>
                         </div>
-                        <div className="mt-8 px-4 py-2 bg-black/40 rounded-lg border border-white/5 font-mono text-sm text-primary">
+                        {/* <div className="mt-8 px-4 py-2 bg-black/40 rounded-lg border border-white/5 font-mono text-sm text-primary">
                             ?demo_count={count}
-                        </div>
+                        </div> */}
                     </motion.div>
 
                     {/* Filter Demo */}
@@ -66,9 +66,9 @@ export default function BasicUrlState() {
                             />
                             <div className="absolute inset-0 rounded-xl bg-primary/5 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity" />
                         </div>
-                        <div className="mt-8 px-4 py-2 bg-black/40 rounded-lg border border-white/5 font-mono text-sm text-secondary break-all max-w-full">
+                        {/* <div className="mt-8 px-4 py-2 bg-black/40 rounded-lg border border-white/5 font-mono text-sm text-secondary break-all max-w-full">
                             ?demo_filter={filter || '...'}
-                        </div>
+                        </div> */}
                     </motion.div>
                 </div>
 
@@ -90,7 +90,7 @@ export default function BasicUrlState() {
                                 <div className="text-muted mb-2 text-xs">// 2. Initialize state with URL binding</div>
                                 <div className="bg-white/5 p-4 rounded-lg border border-white/5">
                                     <span className="text-purple-400">const</span> [countStr, setCount] = <span className="text-blue-400">useURLState</span>(
-                                    <br />&nbsp;&nbsp;<span className="text-green-400">'demo_count'</span>,
+                                    <br />&nbsp;&nbsp;<span className="text-green-400">'count'</span>,
                                     <br />&nbsp;&nbsp;{'{'} <span className="text-orange-400">defaultValue</span>: <span className="text-green-400">'0'</span> {'}'}
                                     <br />);
                                 </div>
@@ -100,7 +100,7 @@ export default function BasicUrlState() {
                                 <div className="text-muted mb-2 text-xs">// 3. Use like standard useState</div>
                                 <div className="bg-white/5 p-4 rounded-lg border border-white/5">
                                     <span className="text-purple-400">const</span> [filter, setFilter] = <span className="text-blue-400">useURLState</span>(
-                                    <br />&nbsp;&nbsp;<span className="text-green-400">'demo_filter'</span>,
+                                    <br />&nbsp;&nbsp;<span className="text-green-400">'filter'</span>,
                                     <br />&nbsp;&nbsp;{'{'} <span className="text-orange-400">defaultValue</span>: <span className="text-green-400">''</span> {'}'}
                                     <br />);
                                 </div>

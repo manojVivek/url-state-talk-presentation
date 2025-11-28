@@ -74,18 +74,6 @@ export default function IntroSlide() {
                             Open source enthusiast with a passion for Web Performance and Startups.
                         </motion.p>
 
-                        {/* <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.75 }}
-                            className="flex flex-wrap gap-2 text-sm"
-                        >
-                            <span className="text-muted/60">Also into:</span>
-                            <span className="px-2 py-1 bg-white/5 rounded-md text-muted border border-white/5">Motorcycles</span>
-                            <span className="px-2 py-1 bg-white/5 rounded-md text-muted border border-white/5">Badminton</span>
-                            <span className="px-2 py-1 bg-white/5 rounded-md text-muted border border-white/5">Flight Sim</span>
-                        </motion.div> */}
-
                         {/* Social Links */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
