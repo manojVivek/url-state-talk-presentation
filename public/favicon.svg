@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="url(#bgGradient)"/>
+  
+  <!-- Text: ?& -->
+  <text x="32" y="48" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="40" 
+        font-weight="700"
+        fill="#ffffff" 
+        text-anchor="middle"
+        dominant-baseline="middle">?&amp;</text>
+</svg>
