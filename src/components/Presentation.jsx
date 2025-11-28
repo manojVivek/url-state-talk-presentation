@@ -63,7 +63,7 @@ export function Presentation({ slides }) {
                             initial={false}
                             transition={{
                                 type: "spring",
-                                stiffness: 500,
+                                stiffness: 400,
                                 damping: 30
                             }}
                             className={`h-1.5 rounded-full ${idx === currentSlide ? 'w-8 bg-gradient-to-r from-primary to-secondary' : 'w-1.5 bg-white/20'

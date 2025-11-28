@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Package, AppWindow, Twitter } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 const ProjectCard = ({ icon: Icon, title, description, url, displayUrl, delay }) => (
     <motion.a
@@ -88,6 +89,11 @@ export default function TakeawaysReferences() {
                 <a href="https://github.com/manojvivek" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Github size={18} />
                     github.com/manojvivek
+                </a>
+                <span>•</span>
+                <a href="https://polarsignals.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Globe size={18} />
+                    polarsignals.com
                 </a>
             </motion.div>
         </div>
