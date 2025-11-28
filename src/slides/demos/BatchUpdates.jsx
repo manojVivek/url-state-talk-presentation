@@ -5,10 +5,10 @@ import { BrowserBar } from '../../components/BrowserBar';
 
 export default function BatchUpdates() {
     // Define 4 separate URL states
-    const [name, setName] = useURLState('demo_name', { defaultValue: '' });
-    const [email, setEmail] = useURLState('demo_email', { defaultValue: '' });
-    const [job, setJob] = useURLState('demo_job', { defaultValue: '' });
-    const [company, setCompany] = useURLState('demo_company', { defaultValue: '' });
+    const [name, setName] = useURLState('name', { defaultValue: '' });
+    const [email, setEmail] = useURLState('email', { defaultValue: '' });
+    const [job, setJob] = useURLState('job', { defaultValue: '' });
+    const [company, setCompany] = useURLState('company', { defaultValue: '' });
 
     const batchUpdates = useURLStateBatch();
 
@@ -43,7 +43,7 @@ export default function BatchUpdates() {
 
     return (
         <div className="flex flex-col h-full w-full max-w-7xl mx-auto px-8">
-            <BrowserBar relevantParams={['demo_name', 'demo_email', 'demo_job', 'demo_company']} />
+            <BrowserBar relevantParams={['name', 'email', 'job', 'company']} />
 
             <div className="text-center mb-8">
                 <h2 className="text-xl font-bold mb-2 text-accent uppercase tracking-widest">Demo</h2>
@@ -104,7 +104,7 @@ export default function BatchUpdates() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-primary text-black font-bold py-4 rounded-xl hover:bg-primary/90 transition-all transform active:scale-95 shadow-lg"
+                                className="w-full bg-black/30 text-white font-bold py-4 rounded-xl border border-white/10 hover:bg-black/60 hover:border-white/20 transition-all transform active:scale-95 shadow-lg"
                             >
                                 Submit
                             </button>
@@ -131,10 +131,10 @@ export default function BatchUpdates() {
                             <div>
                                 <div className="text-muted mb-2 text-xs">// 1. Define multiple states</div>
                                 <div className="bg-white/5 p-4 rounded-lg border border-white/5">
-                                    <span className="text-purple-400">const</span> [name, setName] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'demo_name'</span>);
-                                    <br /><span className="text-purple-400">const</span> [email, setEmail] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'demo_email'</span>);
-                                    <br /><span className="text-purple-400">const</span> [job, setJob] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'demo_job'</span>);
-                                    <br /><span className="text-purple-400">const</span> [company, setCompany] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'demo_company'</span>);
+                                    <span className="text-purple-400">const</span> [name, setName] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'name'</span>);
+                                    <br /><span className="text-purple-400">const</span> [email, setEmail] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'email'</span>);
+                                    <br /><span className="text-purple-400">const</span> [job, setJob] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'job'</span>);
+                                    <br /><span className="text-purple-400">const</span> [company, setCompany] = <span className="text-blue-400">useURLState</span>(<span className="text-green-400">'company'</span>);
                                     <br />
                                     <br /><span className="text-purple-400">const</span> batchUpdates = <span className="text-blue-400">useURLStateBatch</span>();
                                 </div>

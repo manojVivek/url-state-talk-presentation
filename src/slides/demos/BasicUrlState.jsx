@@ -4,14 +4,14 @@ import { useURLState } from '@parca/components';
 import { BrowserBar } from '../../components/BrowserBar';
 
 export default function BasicUrlState() {
-    const [countStr, setCount] = useURLState('demo_count', { defaultValue: '0' });
-    const [filter, setFilter] = useURLState('demo_filter', { defaultValue: '' });
+    const [countStr, setCount] = useURLState('count', { defaultValue: '0' });
+    const [filter, setFilter] = useURLState('filter', { defaultValue: '' });
 
     const count = parseInt(countStr, 10) || 0;
 
     return (
         <div className="flex flex-col h-full w-full max-w-7xl mx-auto px-8">
-            <BrowserBar relevantParams={['demo_count', 'demo_filter']} />
+            <BrowserBar relevantParams={['count', 'filter']} />
 
             <div className="text-center mb-8">
                 <h2 className="text-xl font-bold mb-2 text-accent uppercase tracking-widest">Demo</h2>

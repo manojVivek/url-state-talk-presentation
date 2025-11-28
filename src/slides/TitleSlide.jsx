@@ -36,7 +36,7 @@ export default function TitleSlide() {
                     transition={{ delay: 0.6 }}
                     className="text-2xl text-muted font-light max-w-3xl mx-auto leading-relaxed"
                 >
-                    Mastering URL-based state for <span className="text-white font-medium">shareable</span>, <span className="text-white font-medium">observable</span>, and <span className="text-white font-medium">robust</span> web applications.
+                    Building <span className="text-white font-medium">shareable</span> and <span className="text-white font-medium">resilient</span> web applications.
                 </motion.p>
             </div>
 
